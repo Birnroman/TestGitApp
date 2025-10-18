@@ -1,0 +1,28 @@
+# Xcode
+.DS_Store
+build/
+DerivedData/
+xcuserdata/
+*.xcuserstate
+*.xcworkspace
+!WorkspaceSettings.xcsettings
+
+# Swift Package Manager
+/.build/
+
+# CocoaPods
+Pods/
+
+# fastlane
+fastlane/report.xml
+
+# User-specific
+*.pbxuser
+!default.pbxuser
+*.swp
+
+# Xcode 11+ Swift packages
+Package.resolved
+
+# Secrets
+*.key
