@@ -8,17 +8,31 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+  @State var text: String = ""
+  var body: some View {
+    VStack {
+      Button {
+        text = "Ты серьёзно? Нажал на розовую кнопку? 🤦‍♂️"
+      } label: {
+        Text("Не нажимай")
+          .font(.system(size: 68))
+          .foregroundStyle(.white)
+          .padding()
+          .background(.pink)
+          .cornerRadius(16)
+        // Added a test comment
+      }
+      Spacer()
+      Text(text)
+        .font(.title)
+        .multilineTextAlignment(.center)
+      
     }
+    .frame(height: 280)
+    .padding()
+  }
 }
 
 #Preview {
-    ContentView()
+  ContentView()
 }
