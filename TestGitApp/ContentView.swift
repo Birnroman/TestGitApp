@@ -20,6 +20,7 @@ struct ContentView: View {
           .padding()
           .background(.pink)
           .cornerRadius(16)
+        // Added a test comment
       }
       Spacer()
       Text(text)
