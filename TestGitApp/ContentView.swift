@@ -21,6 +21,7 @@ struct ContentView: View {
           .background(.pink)
           .cornerRadius(16)
         // Added a test comment
+        // Now comment
       }
       Spacer()
       Text(text)
